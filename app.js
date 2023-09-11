@@ -1,0 +1,3 @@
+fatimaGreeter.sayGoodbye();
+JohnGreeter.sayHello();
+
