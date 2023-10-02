@@ -1,101 +1,90 @@
-<!---
-FatimaKhalid15/FatimaKhalid15 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta charset="viewport" content="width=device-width, initial-scale=1">	
-<title>menu</title>
-<style>
-	*{
-		box-sizing: border-box;
-	 margin: 0;
-  padding: 20px;
-	margin-left:50px;
-	}
-	h1{
-		margin-bottom:15px;
-	}
-	p{
- 
-		border :1px solid black;
-		margin-bottom:15px;
-		width: 400px;
-		height:250px;
-		margin-right: auto;
-		margin-left:auto;
-		font-family: serif;
-		color: black;
-	   background-color: grey;
-	}
-}
-	/* simple responsive framework. */
-	.row{
-		width:100;
-	}
-	/************* desktop devices only**************/
-@media (min-width: 1200px){
-	.col-lg-1, .col-lg-2, .col-lg-3 {
-		float:left;
-		border:1px lightgrey;
-	}
-	.col-lg-1{
-	width:8.33%;
-	width: 50px;
-  height: 50px;
-}	
-.col-lg-2{
-	width: 16.66%;
-}
-.col-lg-3{
-	width:25%; }
-}
-
-/*************** tablet devices only ****************/
-@media (min-width: 768px) and (max-width: 991px){
-	.col-td-1, .col-td-2, .col-td-3 {
-		float:left;
-		border:1px lightgrey;
-	}
-	.col-td-1{
-	width:38.33%;
-}	
-.col-td-2{
-	width: 36.66%;
-}
-.col-td-3{
-	width:35%;
-}
- }
- /*************** mobile devices only ****************/
-@media (min-width: 767px) {
-	.col-md-1, .col-md-2, .col-md-3 {
-		float:left;
-		border:1px lightgrey;
-
-	
-	}
-	.col-md-1{
-	width:8.33%;
-}	
-.col-md-2{
-	width: 16.66%;
-}
-.col-md-3{
-	width:25%;
-}
- }
-}
-</style>
+<html lang="en" dir="ltr">
+   <head>
+   <meta charset="utf-8">
+    <title>Responsive </title>      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
 </head>
+
 <body>
-<h1 style="text-align:center"> Our Menu</h1>
-<div class="row">
-	<div  style="text-align:right" class="col-lg-3 col-td-3 col-md-3 "><p>CHICKEN</p></div>
-	<div style="text-align:right" class="col-lg-3 col-td-3 col-md-3"><p>BEEF</p></div>
-	<div style="text-align:right" class="col-lg-3 col-td-3 col-md-3"><p>SUSHI</p></div>
-</div>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+	    <i class="fas fa-align-justify"></i>
+	</label>
+		<label class="logo">FOOD LLC</label>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Menu</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+			</ul>
+			
+	</nav>
+	<section class="items">
+	<div class="item">
+		<h2>Menu</h2>
+		<img src="D:\Downloads\images.jpeg" width="400px"/>
+		<button>Order</button>
+<h2>Specials</h2>
+		<img src="D:\Downloads\cupcake.jpeg" width="400px"/>
+		<button>Order</button>
+		
+	</div>
+</section>
+
 </body>
+</head>
+<div id="main-content" class="container">
+ <h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
+    <div class="text-center">
+      The best brownies!
+    </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="200" height="200" src="D:\Downloads\fudge.jpeg" alt="Fudge Brownies">
+            <h3>Fudge Brownies</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="200" height="200" src="D:\Downloads\chunk.jpeg" alt="Chcolate Chunk Brownies">
+            <h3>Chcolate Chunk Brownies</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="200" height="200" src="D:\Downloads\nutella.jpeg" alt="Nutella Brownies">
+            <h3>Nutella Brownies</h3>
+        </a>
+      </div>
+    </section>
+   </div>
+
+    <body>
+        <div class="footerContainer">
+           <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        
+       <div class="footerBottom">
+             <p> Address: 8100 Oxford Road
+                        </p>
+                      <p>Copyright &copy; FOOD LLC 2022; </p>
+         </div>
+   </footer>
+</body>
+
 </html>
