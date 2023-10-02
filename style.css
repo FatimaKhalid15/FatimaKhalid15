@@ -1,11 +1,10 @@
-body {
+body {   
   font-size: 26px;
-  color: #fff;
-  background-color: grey;
+  color: #634636;
   font-family: 'Oxygen', serif;
 }
 nav{
-  background: black;
+  background: #5c2d04;
   height: 120px;
   width: 100%;
 }
@@ -16,8 +15,25 @@ label.logo{
   padding: 0 100px;
   font-weight: bold;
 }
+nav ul{
+  float:right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
 a.active,a:hover{
-  background: #1b9bff;
+  background: #6e3b0e;
   transition: .5s;
 }
 .checkbtn{
@@ -27,14 +43,15 @@ a.active,a:hover{
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
+  display:none;
 }
 #check{
   display:none;
   }
-  @media(max-width: 952px){
+  @media(max-width: 1952px){
     label.logo{
       font-size: 30px;
-      padding-left: 50px;
+      padding-left: 90px;
       }
       nav ul li a{
         font-size:16px;
@@ -48,7 +65,7 @@ a.active,a:hover{
         position: fixed;
         width:100%;
         height:100vh;
-        background: #2c3e50;
+        background: #634636;
         top:80px;
         left:-100;
         text-align: center;
@@ -64,14 +81,81 @@ a.active,a:hover{
        }
        a:hover, a.active{
         background:none;
-        color: #0082e6;
+        color: white;
        }
        #check:checked ~ ul{
         left:0;
        }
     }
-    section{
-    background: url(star.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-  }
+   *{
+  padding: 20;
+  margin: 20;
+  box-sizing: border-box;
+
+}
+footer{
+  background-color: #6e3b0e;
+   margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.footerContainer{
+  width:100%;
+  padding: 200px 30px 20px;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin:10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color:#6e3b0e;
+  opacity: 0.9;
+}
+/* Hover Effects on Social Media Icon */
+.socialIcons a:hover{
+  background-color: #6e3b0e;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footer ul{
+  display: fixed;
+  justify-content: center;
+  list-style-type: nonedisc; 
+}
+.footerBottom{
+  background-color: #5c2d04;
+  padding: 20px;
+
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+ .footerNav ul{
+  flex-direction:column;
+ }
+}
+
+}
